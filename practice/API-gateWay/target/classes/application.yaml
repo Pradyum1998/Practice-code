@@ -1,0 +1,11 @@
+#spring.application.name=API-gateWay
+
+server:
+  port: 8083
+spring:
+  cloud:
+    gateway:
+       routes:
+          - id: CRM
+            uri: http://localhost:8080/com/getUsers
+
